@@ -2,7 +2,7 @@ body{
     font-family: 'InkyThinPixels';
     margin: 0;
     padding: 0;
-    background: url('files/bg.png');
+    background: url('files/bg.png') fixed;
     background-size: cover;
 }
 
@@ -72,7 +72,23 @@ h1{
     src: url(font/ljk_Inky-Thin-Pixels.otf) format(opentype);
 }
 
-@font-face {
-    font-family: 'InkyThinPixels';
-    src: url(font/ljk_Inky-Thin-Pixels.otf) format(opentype);
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
 }
