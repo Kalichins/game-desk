@@ -1,0 +1,268 @@
+body{
+    font-family: 'InkyThinPixels';
+    margin: 0;
+    padding: 0;
+    background: url('files/bg.png');
+    background-size: cover;
+}
+
+.header{
+    display: flex;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo{  
+    margin-right: 172px;
+}
+
+.logo img{
+    width: 90px;
+    height: 90px;
+}
+
+.menu{
+    margin-left: 172px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.icns{
+    margin-left: 38px;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.icns img{   
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.slider {
+    margin: 0px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 600px; /* Высота слайдера */
+    position: relative;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.mySwiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стрелки навигации */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    color: white;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px; /* Расположить пагинацию внизу */
+    left: 50%;
+    transform: translateX(-50%); /* Центрировать */
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #3d3d3d !important; /* Белый цвет для неактивных кружков */
+    opacity: 0.6; /* Прозрачность для неактивных */
+    border-radius: 50%; /* Сделать круглыми */
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important; /* Цвет активного кружка */
+    opacity: 1 !important; /* Без прозрачности для активного */
+}
+
+
+
+
+.product-slider {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: space-between; /* Пространство между блоками */
+}
+
+.product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product img {
+    width: 270px;
+    height: 270px;
+    object-fit: contain;
+    border-radius: 4px;
+    y: 4px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.product p {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Расстояние от краев (отступы) */
+.product-wrapper > *:first-child {
+    margin-left: 80px; /* Отступ слева */
+}
+
+.product-wrapper > *:last-child {
+    margin-right: 80px; /* Отступ справа */
+}
+
+/* Промежутки между блоками */
+.product-wrapper > * {
+    margin-right: 51px; /* Расстояние между блоками */
+}
+
+
+
+.popular-slider {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0px 0;
+}
+
+.popular-wrapper {
+    display: flex;
+    justify-content: space-between; /* Пространство между блоками */
+}
+
+.popular {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular img {
+    width: 270px;
+    height: 270px;
+    object-fit: contain;
+    border-radius: 4px;
+    y: 4px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.popular p {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Расстояние от краев (отступы) */
+.popular-wrapper > *:first-child {
+    margin-left: 80px; /* Отступ слева */
+}
+
+.popular-wrapper > *:last-child {
+    margin-right: 80px; /* Отступ справа */
+}
+
+/* Промежутки между блоками */
+.popular-wrapper > * {
+    margin-right: 51px; /* Расстояние между блоками */
+}
+
+
+h1{
+    margin-left: 80px;
+    font-weight: normal;
+    color: white;
+    font-size: 50px;
+}
+
+
+h2{
+    font-size: 30px;
+    color: white;
+    margin-left: 80px;
+}
+
+
+.text-maps{
+    font-size: 20px;
+    color: white;
+    margin-left: 80px;
+}
+
+.fotter{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    height: 170px;
+    justify-content: start;
+    align-items: center;
+}
+
+.text a{
+    font-size: 32px;
+    margin-left: 80px;
+}
+
+.contact-info p{
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.contact-info a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+
+
+@font-face {
+    font-family: 'InkyThinPixels';
+    src: url(font/ljk_Inky-Thin-Pixels.otf) format(opentype);
+}
