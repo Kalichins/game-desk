@@ -17,7 +17,7 @@ html, body {
     height: auto;
     min-height: 100vh;
     background: url('files/background/bg.png');
-    background-size: contain; 
+    background-size: cover; 
     color: #fff;
 }
 
