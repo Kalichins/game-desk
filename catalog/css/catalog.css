@@ -9,14 +9,14 @@
     box-sizing: border-box;
 }
 
-body{
-    min-height: 100hv;
+html, body {
     font-family: 'InkyThinPixels';
     margin: 0;
     padding: 0;
-    background: url('../../files/background/bg.png') fixed;
+    height: auto;
+    min-height: 100vh;
+    background: url('../../files/background/bg.png');
     background-size: cover;
-    overflow-y: scroll;
 }
 
 a {
