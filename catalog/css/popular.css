@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'InkyThinPixels';
+    src: url(../../font/ljk_Inky-Thin-Pixels.otf) format(opentype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'InkyThinPixels';
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    background: url('../../files/background/bg.png');
+    background-size: cover;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.menu-burger{
+    display: none;
+}
+
+/* Хедер */
+.header {
+    display: flex;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+span{
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    left: 2%;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.icns {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.icns img {
+    width: 60px;
+    height: 60px;
+}
+
+
+.one-text p{
+    margin-left: 880px;
+    top: 25%;
+    position: absolute;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.two-text p{
+    margin-left: 880px;
+    top: 32%;
+    position: absolute;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.three-text p{
+    margin-left: 880px;
+    top: 45%;
+    position: absolute;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.four-text{
+    margin-left: 880px;
+    top: 75%;
+    position: absolute;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.five-text{
+    margin-left: 880px;
+    top: 85%;;
+    position: absolute;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.button{
+    width: 540px;
+    position: absolute;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(213, 0, 56, 0.96);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 880px;
+    border-radius: 5px;
+    padding: 6px;
+    top: 60%;
+}
+
+.button p{
+    display: block;
+    color: #ffffff;
+    font-size: 36px;
+    text-decoration: none;
+    position: absolute;
+    
+}
+
+.slider-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    display: none;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.dots {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #fff;
+}
+
+/* Слайдер */
+.slider-pc {
+    margin: 20px auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.mySwiper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    right: 20%;
+}
+
+.mySwiper .swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Стрелки навигации */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    color: white;
+}
+
+/* Пагинация */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #3d3d3d !important;
+    opacity: 0.6;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+    opacity: 1 !important;
+}

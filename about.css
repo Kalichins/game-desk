@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'InkyThinPixels';
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh;
+    background: url('files/background/bg.png');
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.menu-burger{
+    display: none;
+}
+
+/* Хедер */
+.header {
+    display: flex;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+span{
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    left: 2%;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.icns {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.icns img {
+    width: 60px;
+    height: 60px;
+}
+
+h1{
+    top: 10px;
+    position: relative;
+    font-size: 50px;
+    color: white;
+    margin-left: 80px;
+    font-weight: normal;
+}
+
+.about-text{
+    color: white;
+    font-size: 30px;
+    margin-left: 80px;
+    position: relative;
+    top: 20px;
+    max-width: 1400px;
+    white-space: normal;
+}
+
+.about-text1{
+    color: white;
+    font-size: 40px;
+    margin-left: 80px;
+    position: relative;
+    top: 30px;
+}
+
+.about-text-2{
+    color: white;
+    font-size: 32px;
+    margin-left: 80px;
+    position: relative;
+    top: 40px;
+}
+
+/* Футер */
+.fotter {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+    top: 150px;
+}
+
+.fotter-text a {
+    font-size: 32px;
+    padding-right: 10px;
+}
+
+.fotter-text {
+    padding-left: 160px;
+}
+
+.contact-info{
+    padding-right: 160px;
+}
+
+.contact-info p {
+    font-size: 20px;
+}
+
+.contact-info a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-burger{
+    display: none;
+}
+
+span{
+    display: none;
+}
+
+@font-face {
+    font-family: 'InkyThinPixels';
+    src: url(font/ljk_Inky-Thin-Pixels.otf) format(opentype);
+    }
